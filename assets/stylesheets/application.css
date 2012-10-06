@@ -1,0 +1,119 @@
+@import url(/assets/stylesheets/reset.css);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #FFF;
+  font-size: 16px;
+  background: #000;
+  background-image: url(../images/background-pattern.png), url(../images/background.jpg);
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center center;
+  -webkit-background-size: auto, cover;
+  -moz-background-size: auto, cover;
+  -o-background-size: auto, cover;
+  background-size: auto, cover;
+}
+
+/* headings */
+h1, h2, h3 {
+  margin-bottom: 1em;
+  clear: both;
+}
+h1 {
+  font-size: 2.2em;
+  font-weight: normal;
+}
+/* paragraphs */
+p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  max-width: 400px;
+}
+strong { font-weight: bold; }
+
+::-moz-selection {
+  background: #FF9600;
+  color: #333333;
+}
+::selection {
+  background: #FF9600;
+  color: #333333;
+}
+
+/* links */
+a {
+  color: #FF9600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active,
+a:focus {
+  position: relative;
+  top: 1px;
+}
+
+/* helpers */
+.hide {
+  display: none;
+}
+
+/* layout */
+header {
+  margin-top: 2em;
+}
+section {
+  padding: 5% 0 4% 7%;
+  width: 30%;
+}
+
+/* Index styles ************************************************************/
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links a {
+  display: block;
+  float: left;
+  width: 34px;
+  height: 34px;
+  background: url(../images/icons-normal.png) transparent no-repeat;
+  margin-right: 18px;
+}
+
+.contact-links a.dribble { background-position: 0 0; }
+.contact-links a.linkedin { background-position: -50px 0; }
+.contact-links a.skype { background-position: -100px 0; }
+
+.contact-links a:hover {
+  background: url(../images/icons-hover.png);
+}
+.contact-links a.dribble:hover { background-position: 0 0; }
+.contact-links a.linkedin:hover { background-position: -50px 0; }
+.contact-links a.skype:hover { background-position: -100px 0; }
+
+/* Media Queries *************************************************************************************************************************/
+@media screen and (max-width: 900px) {
+  section {
+    min-width: 70%;
+  }
+  header {
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section {
+    min-width: 280px;
+    padding-right: 20px;
+  }
+}
