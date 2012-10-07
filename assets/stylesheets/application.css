@@ -78,6 +78,8 @@ section {
 /* Index styles ************************************************************/
 .contact-links {
   margin-top: 20px;
+  overflow: auto;
+  margin-bottom: 60px;
 }
 
 .contact-links a {
