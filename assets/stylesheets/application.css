@@ -104,52 +104,29 @@ body {
 /* Portfolio *********************************************************/
 .portfolio {
   overflow: hidden;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 
-.portfolio .title {
-  display: none;
+.portfolio ol {
+  list-style: none;
 }
 
 .portfolio li {
   float: left;
-  display: inline-block;
-  width: 28%;
+  width: 33.33%;
   background: #000;
 }
 
-.portfolio img {
-  width: 100%;
-  max-width: inherit;
+.portfolio li.hidden {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
 }
 
-.portfolio img:hover {
-  opacity: 0.8;
-  /* Aqui colocamos la transicion para cada navegador */
-  -webkit-transition: opacity .5s ease-out;  /* Chrome y Safari */
-  -o-transition: opacity .5s ease-out;  /* Opera */
-  -moz-transition: opacity .5s ease-out;  /* Mozilla Firefox */
-  -ms-transition: opacity .5s ease-out;   /* Internet Explorer */
-  transition: opacity .5s ease-out;  /* W3C */
-}
-
-.portfolio li:nth-child(8n+4),
-.portfolio li:nth-child(8n+5) {
-  width: 16%;
-}
-
-.portfolio li:nth-child(8n+4) img,
-.portfolio li:nth-child(8n+5) img {
-  height: 100%;
-  width: auto;
-}
-
-.portfolio li:nth-child(8n+5) img {
-  float: right;
-}
-
-.portfolio li {
-  height: 280px;
-  overflow: hidden;
+.portfolio li a {
+  line-height: 0;
+  display: block;
 }
 
 /* Footer ************************************************************/
@@ -191,30 +168,9 @@ footer {
 .contact-links a.skype:hover { background-position: -247px -81px; }
 
 /* Media Queries *************************************************************************************************************************/
-@media screen and (max-width: 1350px) {
-  .portfolio li {
-    height: 250px;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .portfolio li {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .portfolio li {
-    height: 160px;
-  }
+@media screen and (max-width: 900px) {
   .main-header {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .portfolio li {
-    height: 120px;
+    width: 70%;
   }
 }
 
@@ -247,31 +203,6 @@ footer {
 
   .portfolio li {
     width: 50%;
-    height: 200px;
-  }
-
-  .portfolio img {
-    width: 100%;
-    max-width: inherit;
-  }
-
-  .portfolio li:nth-child(8n+4),
-  .portfolio li:nth-child(8n+5) {
-    width: 50%;
-  }
-
-  .portfolio li:nth-child(8n+4) img,
-  .portfolio li:nth-child(8n+5) img {
-    height: auto;
-    width: 100%;
-    max-width: inherit;
-  }
-
-  .portfolio li:nth-child(8n+5) img {
-    height: auto;
-    float: none;
-    width: 100%;
-    max-width: inherit;
   }
 
   footer {
@@ -283,14 +214,12 @@ footer {
   }
 }
 
-@media screen and (max-width: 550px) {
-  .portfolio li {
-    height: 150px;
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+  .contact-links a {
+    background: url(/assets/images/social_x2.png) transparent no-repeat;
   }
-}
 
-@media screen and (max-width: 430px) {
-  .portfolio li {
-    height: 140px;
+  .main-header {
+    background: url(/assets/images/logo_x2.png) no-repeat top center;
   }
 }
