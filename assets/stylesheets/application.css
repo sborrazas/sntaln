@@ -1,5 +1,5 @@
 @import url(/assets/stylesheets/reset.css);
-@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
 
 html, body {
   height: 100%;
@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #FFF;
   font-size: 16px;
   background: #000;
