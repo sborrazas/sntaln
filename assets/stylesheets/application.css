@@ -214,12 +214,19 @@ footer {
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+
   .contact-links a {
-    background: url(/assets/images/social_x2.png) transparent no-repeat;
+    background-image: url(/assets/images/social@x2.png);
+    -webkit-background-size: 319px 153px;
+    background-size: 319px 153px;
   }
 
   .main-header {
-    background: url(/assets/images/logo_x2.png) no-repeat top center;
+    background-image: url(/assets/images/logo@x2.png);
+    -webkit-background-size: 196px 34px;
+    background-size: 196px 34px;
   }
 }
