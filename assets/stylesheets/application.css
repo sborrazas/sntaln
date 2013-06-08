@@ -1,24 +1,25 @@
 @import url(/assets/stylesheets/reset.css);
-@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
-html, body {
+html,
+body {
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
   font-size: 16px;
-  background: #000;
-  background-image: url(../images/background-pattern.png), url(../images/background.jpg);
-  background-repeat: repeat, no-repeat;
-  background-position: top left, center center;
-  -webkit-background-size: auto, cover;
-  -moz-background-size: auto, cover;
-  -o-background-size: auto, cover;
-  background-size: auto, cover;
+  background: #EDEBEB;
+}
+
+header,
+.portfolio,
+footer {
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* Selection ******************************************************/
@@ -32,73 +33,43 @@ body {
 }
 
 /* Header *********************************************************/
-.main-header {
-  width: 55%;
-  margin: 7% auto 0 auto;
+header {
   text-align: center;
-  padding: 7% 0;
-  background: url(/assets/images/logo.png) no-repeat top center;
+  padding-top: 98px;
+  background: #444 url(/assets/images/logo.png) no-repeat 50% 36px;
 }
 
-.main-header h1 {
+header hgroup {
   display: none;
 }
 
-.main-header p {
-  font-size: 1.6em;
-  display: inline;
+.header-content {
+  background: #FFF;
+  padding-bottom: 25px;
 }
 
-.main-nav {
-  overflow: auto;
-  margin-top: 4em;
-}
-
-.main-nav ul {
-  text-align: center;
-}
-
-.main-nav li {
-  display: inline-block;
+header p.description {
+  font-size: 0.9em;
+  padding: 4% 20% 1% 20%;
+  line-height: 2em;
 }
 
 .main-nav a {
   text-transform: uppercase;
-  float: left;
   color: #FFF;
+  display: inline-block;
+  margin: 12px auto;
+  font-size: 0.9em;
+  padding: 0.9em 2.3em;
   font-weight: bold;
-  margin: 0 20px;
-  -moz-border-radius: 3px;
+  background: #E84C3D;
   -webkit-border-radius: 3px;
-  border-radius: 3px;
-  padding: 0.9em 0;
-  width: 160px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
 }
 
-.main-nav a.primary {
-  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(255, 255, 255, 0.4);
-  box-shadow: inset 0px 1px 4px 0px rgba(255, 255, 255, 0.4);
-  background: #FAA61A;
-}
-
-.main-nav a.primary:hover {
-  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(100, 100, 100, 0.4);
-  box-shadow: inset 0px 1px 4px 0px rgba(100, 100, 100, 0.4);
-}
-
-.main-nav a.secondary {
-  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(180, 180, 180, 0.2);
-  box-shadow: inset 0px 1px 1px 0px rgba(180, 180, 180, 0.2);
-  background: #323232;
-}
-
-.main-nav a.secondary:hover {
-  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
-}
-
-.main-nav a:active {
-  position: relative;
+.main-nav a:hover {
+  background: #F35041;
 }
 
 /* Portfolio *********************************************************/
@@ -131,9 +102,9 @@ body {
 
 /* Footer ************************************************************/
 footer {
-  background: #0E0C0B;
+  background: #FFF;
   overflow: auto;
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
 .contact-links ul {
@@ -158,59 +129,41 @@ footer {
 }
 
 .contact-links a.twitter { background-position: 0 0; }
-.contact-links a.dribble { background-position: -83px 0; }
-.contact-links a.linkedin { background-position: -164px 0; }
-.contact-links a.skype { background-position: -247px 0; }
+.contact-links a.dribble { background-position: -77px 0; }
+.contact-links a.linkedin { background-position: -153px 0; }
+.contact-links a.skype { background-position: -230px 0; }
 
-.contact-links a.twitter:hover { background-position: 0 -81px; }
-.contact-links a.dribble:hover { background-position: -83px -81px; }
-.contact-links a.linkedin:hover { background-position: -164px -81px; }
-.contact-links a.skype:hover { background-position: -247px -81px; }
+.contact-links a.twitter:hover { background-position: 0 -82px; }
+.contact-links a.dribble:hover { background-position: -77px -82px; }
+.contact-links a.linkedin:hover { background-position: -153px -82px; }
+.contact-links a.skype:hover { background-position: -230px -82px; }
 
 /* Media Queries *************************************************************************************************************************/
 @media screen and (max-width: 900px) {
-  .main-header {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .main-header {
-    width: 80%;
-    padding: 14% 0 4% 0;
-  }
-
-  .main-header p {
-    display: inline-block;
-    padding: 0.5em 0;
-  }
-
-  .main-nav li {
-    display: block;
-    margin: 20px auto;
-  }
-
-  .main-nav {
-    margin: 0;
-  }
-
-  .main-nav a {
-    float: none;
-    margin: 0 auto;
-    display: block;
-    width: 100%;
-  }
-
-  .portfolio li {
-    width: 50%;
-  }
-
   footer {
     padding: 30px 0;
   }
 
   .contact-links li {
-    margin: 4% 10%;
+    width: 50%;
+    margin: 2% 0;
+    float: left;
+  }
+  .contact-links a {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio li {
+    width: 50%;
+  }
+
+  header,
+  .portfolio,
+  footer {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -220,13 +173,13 @@ footer {
 
   .contact-links a {
     background-image: url(/assets/images/social@x2.png);
-    -webkit-background-size: 319px 153px;
-    background-size: 319px 153px;
+    -webkit-background-size: 301px 153px;
+    background-size: 301px 153px;
   }
 
-  .main-header {
+  header {
     background-image: url(/assets/images/logo@x2.png);
-    -webkit-background-size: 196px 34px;
-    background-size: 196px 34px;
+    -webkit-background-size: 197px 35px;
+    background-size: 197px 35px;
   }
 }
