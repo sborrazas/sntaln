@@ -1,7 +1,7 @@
 (function () {
   var inactiveSources = []
     , activeSources
-    , VISIBLE_IMAGES = 6;
+    , VISIBLE_IMAGES = 9;
 
   $(".portfolio a").each(function (_, el) {
     var $img = $(el).find("img");
