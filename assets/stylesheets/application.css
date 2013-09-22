@@ -1,5 +1,5 @@
 @import url(/assets/stylesheets/reset.css);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 html,
 body {
@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #444;
   font-size: 16px;
   background: #EDEBEB;
@@ -51,6 +51,12 @@ header hgroup {
 header .description {
   padding: 0 20%;
   line-height: 2em;
+  font-size: 1.2em;
+}
+
+header .main-description {
+  font-size: 1.7em;
+  line-height: 2.6em;
 }
 
 .main-nav {
