@@ -49,7 +49,7 @@ header hgroup {
 }
 
 header .description {
-  padding: 0 20%;
+  padding: 0 10%;
   line-height: 2em;
   font-size: 1.2em;
 }
@@ -147,7 +147,7 @@ footer {
 .contact-links a.linkedin:hover { background-position: -153px -82px; }
 .contact-links a.skype:hover { background-position: -230px -82px; }
 
-/* Media Queries *************************************************************************************************************************/
+/* Media Queries ****************************************************/
 @media screen and (max-width: 900px) {
   header .description {
     padding: 0 10%;
@@ -158,7 +158,7 @@ footer {
   }
 
   .contact-links li {
-    width: 50%;
+    width: 25%;
     margin: 2% 0;
     float: left;
   }
