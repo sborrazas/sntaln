@@ -20,6 +20,7 @@ header,
 footer {
   width: 82%;
   margin: 0 auto;
+  max-width: 1060px;
 }
 
 /* Selection ******************************************************/
@@ -85,7 +86,6 @@ header .main-description {
 .portfolio {
   overflow: hidden;
   margin: 0 auto;
-  max-width: 1170px;
 }
 
 .portfolio ol {
